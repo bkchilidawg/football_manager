@@ -1,0 +1,11 @@
+<h1>Confrence Details</h1>
+<ul>
+  <li><strong>Name:</strong> <%= @confrence.name %></li>
+  <li><strong>Number of Teams:</strong> <%= @confrence.number_of_teams %></li>
+  <li><strong>Is it Power 5?:</strong> <%= @confrence.power_5? %></li>
+  <li><strong>Number of Associated Teams:</strong> <%= @child_count %></li>
+  <%= link_to 'View Teams', confrence_teams_path(@confrence) %>
+  <%= link_to 'Edit Confrence', edit_confrence_path(@confrence) %>
+
+
+</ul>

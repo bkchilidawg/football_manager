@@ -1,0 +1,8 @@
+<h1>Confrences</h1>
+<% @confrences.each do |confrence| %>
+  <h3><%= confrence.name %></h3>
+  <p>Number of Teams: <%= confrence.number_of_teams %></p>
+  <p>Is a Power 5?: <%= confrence.power_5? %></p>
+  <p>Created at: <%= confrence.created_at.strftime('%Y-%m-%d %H:%M:%S') %></p>
+<% end %>
+<%= link_to 'New Confrence', new_confrence_path %>

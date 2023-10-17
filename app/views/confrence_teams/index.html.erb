@@ -1,0 +1,11 @@
+<h1>Teams Associated with <%= @confrence.name %></h1>
+<ul>
+  <% @teams.each do |team| %>
+    <li><strong>College Name:</strong> <%= team.college_name %></li>
+    <li><strong>Conference Championships:</strong> <%= team.conf_champs %></li>
+    <li><strong>Has a National Championship?:</strong> <%= team.natl_champ? %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back to Confrences', confrences_path %>
+

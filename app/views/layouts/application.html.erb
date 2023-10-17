@@ -10,7 +10,20 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+ <body>
+  <header>
+
+    <%= render 'shared/teams_index_link' %>
+    <%= render 'shared/confrences_index_link' %>
+
+  </header>
+  <div class="container">
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>
+
+
+
+
+

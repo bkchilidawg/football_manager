@@ -1,0 +1,24 @@
+<h1>Edit Confrence</h1>
+
+<%= form_with(model: @confrence, local: true, data: { turbo: false }) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number_of_teams %>
+    <%= f.text_field :number_of_teams %>
+  </div>
+
+  <div class="field">
+    <%= f.label :power_5? %>
+    <%= f.check_box :power_5? %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Update Confrence' %>
+  </div>
+<% end %>
+
+<%= link_to 'Back', confrences_path %>

@@ -1,0 +1,16 @@
+<center>
+  <h1>New Conference</h1>
+<section class="new-card card">
+  <div class=" card-body">
+    <%= form_with url: '/confrences', method: :post, data: { turbo: false } do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name, placeholder: "enter confrence name" %> 
+      <%= f.label :number_of_teams %>
+      <%= f.text_field :number_of_teams, placeholder: "enter number of teams" %>
+      <%= f.label :power_5?, "Power 5?" %>
+      <%= f.check_box :power_5? %>
+      <%= f.submit 'Create Confrence', class: 'button' %>
+    <% end %>
+
+  </div>
+</center>

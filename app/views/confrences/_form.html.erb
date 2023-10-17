@@ -1,0 +1,20 @@
+<%= form_with(model: @confrence, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_teams %>
+    <%= form.number_field :number_of_teams %>
+  </div>
+
+  <div class="field">
+    <%= form.label :power_5? %>
+    <%= form.check_box :power_5? %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
